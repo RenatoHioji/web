@@ -1,0 +1,187 @@
+body{
+    background-color: #c0c0c0;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin-bottom: 0;
+}
+
+    
+/*Navigation Bar*/
+.nav{
+    background-color: #000F32;
+    color: #fefefe;
+    height: 50px;
+    width: 90%;
+    position: fixed;
+    top: 0;
+    padding-top: 25px;
+    padding-left: 25%;
+    z-index: 1;
+    right: 0;
+    left: 0;
+}
+.nav a{
+    color:#fefefe;
+    text-decoration: none;
+}
+.blackbar{
+    width: 100%;
+    height: 50%;
+    background-color: #000F32;
+    position: relative;
+}
+
+
+.title1{
+    animation: inicio 0s;
+}
+.title2{
+    left: 10%;
+    position: relative;
+}
+.title3{
+    position: relative;
+    left: 20%;
+}
+.title4{
+    position: relative;
+    left: 30%;
+}
+
+/*Carrossel*/
+.imagem{
+    position: relative;
+    width: 400%;
+    height: 750px;
+    animation: carrossel 20s infinite;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-image: 0;
+}
+.carrossel{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 750px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-image: 0;
+}
+.carrossel img{
+    width: 25%;
+    height: 750px;
+    position: relative;
+    filter: blur(1px);
+}
+@keyframes carrossel{
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+.quotes{
+    position: absolute;
+    width: 95%;
+    top: 450px;
+    left: 5%;
+    color: #fefefe;
+    font-size: 50px;
+}
+.quotes .quote2{
+    left: 20%;
+    position: relative;
+}
+.quotes .quote3{
+    left: 50%;
+    position: relative;
+}
+.quotes .quote4{
+    left: 70%;
+    position: relative;
+}
+
+/*Conteúdo 1*/
+.content-1{
+    background-color: #fefefe;
+    width: 100%;
+    height: 1200px;
+    color: #000F32;
+    position: relative;
+}
+.title-content{
+    text-align: center;
+    font-size: 30px;
+    height: 10%;
+    width: 100%;
+    position: relative;
+    top: 2%;
+}
+.img-content{
+    position: relative;
+    left: 0%;
+    bottom: 2.5%;
+    width:40%;
+    height: 40%;
+}
+.content-content{
+    position: relative;
+    left: 45%;
+    width: 50%;
+    height: 25%;
+    bottom: 40%;
+    text-align: justify;
+}
+.vantagens{
+    position: relative;
+    background-color: #fefefe;
+    left: 10%;
+    bottom: 25%;
+    width: 50%;
+}
+.desvantagens{
+    text-align:right;
+    position: relative;
+    left: 40%;
+    width: 50%;
+    bottom: 21.5%;
+}
+/*Conteúdo 2*/
+.content-2{
+    background-color: #000F32;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    color: #fefefe;
+}
+.content-content2{
+    position: relative;
+    left: 65%;
+    top: 50%;
+    font-size: 20px;
+}
+.content-content3{
+    position: relative;
+    width: 55%;
+    left: 5%;
+    text-align: justify;
+    z-index: 1;
+    bottom: 2%;
+}
+
+
+/*Rodapé*/
+.footer{
+    background-color: #000000;
+    width: 100%;
+    height: 200px;
+}
+
+

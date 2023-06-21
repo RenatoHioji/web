@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="wrapper">
+    <section class="header">
+        <h1 class="titulo">Sagarana</h1>
+        <img src="data:image/jpeg;base64,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" class="imagem">
+
+    </section>
+    <section class="content-1">
+        <h1> Enredo</h1>
+        <p>Então, sem ao menos verificar o que há, o matungo de Zé Grande espanca o tabique da
+            coberta, o amarilho de Silvino saracoteia empinado, quase partindo o látego, e o poldro
+            pampa, de finca-pé, relincha escandalosamente.
+            Mas Sete-de-Ouros detesta conflitos. Não espera que o garanhão murzelo volva a garupa
+            para despejar-lhe duplo coice mergulhante, com vigorosa simetria. Que também do outro
+            lado, se assoma o poldro pampa, espalhando a crina e arreganhando os beiços, doido para
+            morder. Sete-de-Ouros se faz pequeno. Escoa-se entre as duas feras. Desliza. E pega o
+            passo pelo pátio, a meio trote e em linha reta, possivelmente pensando:
+            — Quanto exagero que há!...
+            Passa rente aos bois-de-carro —pesados eunucos de argolas nos chifres, que remastigam,
+            subalternos, como se cada um trouxesse ainda ao pescoço a canga, e que mesmo
+            disjungidos se mantêm paralelos, dois a dois. Corta ao meio o grupo de vacas leiteiras, já
+            ordenhadas, tranqüilas, com as crias ao pé. E desvia-se apenas da Açucena. Mas, também,
+            qualquer pessoa faria o mesmo, os vaqueiros fariam o mesmo, o Major Saulo faria o
+            mesmo, pois a Açucena deu à luz, há dois dias, um bezerrinho muito galante, e é bem capaz
+            de uma brutalidade sem aviso prévio e de cabeça torta, pegando com uma guampa entre as
+            costelas e a outra por volta do umbigo, com o que, contado ainda o impacto da marrada,
+            crível é que o homem mais virtuoso do mundo possa ser atirado a seis metros de distância,
+            e a toda a velocidade, com alças de intestino penduradas e muito sangue de pulmão à vista.
+            E Sete-de-Ouros, que sabia do ponto onde se estar mais sem tumulto, veio encostar o corpo
+            nos pilares da varanda. Deu de cabeça, para lamber, veloz, o peito, onde a cauda não
+            alcançava. Depois, esticou o sobrebeiço em toco de tromba e trouxe-o ao rés da poeira,
+            soprando o chão.
+            Mas tinha cometido um erro, O primeiro engano seu nesse dia, O equívoco que decide do
+            destino e ajeita caminho à grandeza dos homens e dos burros. Porque: “quem é visto é
+            lembrado”, e o Major Saulo estava ali:
+            —-Ara, veja, louvado tu seja! Hô-hô.. Meu compadre Sete de-Ouros está velho... Mas ainda
+            pode agüentar uma viagem, vez em quando... Arreia este burro também, Francolim!
+            — Sim senhor seu Major. Mas o senhor está falando sério, ou é por brincar?
+            — Me disseram que isto é sério. Fecha a cara, Francolim! Fecha a cara, Francolim!
+            Com a risada do Major, Sete-de-Ouros velou os olhos, desgostoso, mesmo sem saber que
+            eram donas de duras as circunstâncias.
+            Francolim viera contar que não havia montadas que chegassem: abrira-se um rombo na
+            cerca do fundo do pasto-do-açude, por onde quase toda a cavalhada varara durante a noite;
+            a esta hora, já teriam vadeado o córrego e descambado a serra, e andariam longe, certo no
+            Brejal, lambendo a terra sempre amida do barreiro, junto com os bichos do campo e com os
+            bichos do mato.
+            O Major dera de taca no parapeito, muitas vezes, alumiando raiva nos olhos verdes e
+            enchendo o barrigão de riso. Depois, voltou as costas ao camarada, e, fazendo festas à
+            cachorrinha Sua-Cara, que pulara para cima do banco, começou a falar vagaroso e alto, mas
+            sem destampatório, meio rindo e meio bravo, que era o pior:
+            —Tenho vaqueiros, que são bons violeiros... Tenho cavalos ladinos, para furarem tapumes.
+            Hô-hô... Devagar eu uso, de pressa eu pago... Todo-o-mundo aqui vale o feijão que come...
+            Hô-hô... E hoje, com um tempo destes e a gente atrasada...
+            Afinal, mandou Sua-Cara descer do banco, e se desvirou, de repente, encarando Francolim:
+             — Quantos animais ficaram, mulato mestre meu secretário?
+            — Primeiro que todos, o cardão do senhor, seu Major. Silvino, Benevides e Leofredo, t os
+            cavalos lá deles... Zé Grande também, eu também... Tem o baio de seu Tonico. . . Tem o
+            alazão... E o Rio-Grande. Eu até já estou achando que eles chegam, seu Major.
+            E Francolim baixava os olhos, sisudo, com muita disciplina de fisionomia.
+            — Francolim, você hoje está analfabeto. Pensa mais, Francolim!
+            — Tem também... Só se for o cavalo de silhão de sá dona Cota, mais o poldro pampa... É,
+            mas esse não serve: o poldro já está com carretéis nas munhecas, mas ainda não acabou de
+            ser bem repassado.
+            — O poldro vai, Francolim.
+            — Então, dão. Assim, estão todos.
+            — Conta nos dedos, Francolim. Têm de ir dez, fora nós dois.
+            — Falta um cavalo, seu Major!
+            — Francolim, você acertou depressa demais...
+            E o Major Saulo foi até à porta, para espiar o relógio da pa rede da sala. Maria Camélia
+            chegou com a cafeteira e uma caneca. — “Quente mesmo? para velho?”— “De pelar, seu
+            Major!” Sempre com a mão esquerda alisando a barriga, o Major Saulo chupava um gole,
+            suspirava, ria e chuchurreava outro. E a preta e Francolim, certos, a um tempo, sorriam,
+            riam e ficavam sérios outra vez. — “dá o resto para o Francolim, mas sem soprar, Maria!”
+            E o Major, já de cigarro na boca, se debruçava no parapeito, pensando alto:
+            — ...Boi para encher dois trens, e mais as vacas que vão ficar no arraial... Para a gente sair,
+            ainda é cedo... Mas, melhor que chovesse agora, no modo de dar uma estiada com folga...
+            E nessa hora foi que Sete-de-ouros se veio apropinquando, brando.
+            — Arreia este burro também, Francolim!
+            — Sim senhor, seu Major. Só que o burrinho está pisado, e quase que não enxerga mais..
+            — Que manuel-nãoenxerga, Francolim! — e o Major Saulo parou, pensando, com um
+            dedo, enérgico, rodante dentro do nariz; mas, sem mais, se iluminou: — São só quatro
+            léguas: o João Manico, que é o mais leviano, pode ir nele. Há-há...
+            — Agora, Francolim, vá-s’embora, que eu já estou com muita preguiça de você.
+            Mas a preta Maria Camélia se foi, ligeira, levando o decreto do Major Saulo de novidade
+            para a cozinha, onde arranchavam ou labutavam três meninas, quatro moças e duas velhas,
+            afora gatos e cachorros que saíam e entravam; e logo se pôs aceso o mundo: — O João
+            Manico vai tocar boiada no burrinho! Imagina só, meu-deus-do-céu, que graça!...
+            Porém, cá fora, a vaqueirama começava o corre-corre, pega pega, arreia-arreia, aos gritos
+            benditos de confusão. — “Vamos, gente, pessoal, quem vai na frente bebe a água limpa!”
+            Voz pomposa, Raymundão, o branco de cabelo de negro: — “Sinoca, larga o que tem
+            dono, que esse coxonilho o meu!” Com Sinoca, das Taquaras, que já teve pai rico: —
+            “Desinvoca, Leofredo, fasta o seu macho para lá!” Daí Leofredo, magrelo, de cara
+            bexiguenta, que se prepara, cantando: —“Eu vou dar a despedida, como deu o bem-te-vi..
+            .“E Tote, homem sisudo, irmão de Silvino por parte de mãe, puxando o alazão, que não
+            mau: —“Ara, só, Bastião, com esse arreio de caçambas que eu não vou, tocando sino de
+            igreja...” Já Silvino, cara má, cuspindo nas mãos para dar um nó no rabo do seu café-comleite de crinas alvas, grande esparramador de lama. E mais Sebastião, o capataz, pulando
+            em cima do Rio-Grande — cavalo de casa, com uma andadura macia de automóvel, tão
+            ligeira que ultrapassa o picado dos outros animais e chega a ser quase um meio-galope. E o
+            bom Zé Grande, mexendo com a boca sem falar, para acabar de enrolar o laço no arção
+            deitado do bastos paulista, e coçando um afago na tábua-do-pescoço do compacto CataBrasa, cavalão herdado, bastardo, pesado de diante como um muar e de cabeça volumosa,
+            mas doutor para conhecer no campo as negaças da rês brava e para se esbarrar para a
+            derrubada, de seda ou de vara. E Benevides, já montado — no Cabiúna manteúdo, animal
+            fino, de frente alçada e pescoço leve, que dispensa rabicho mas reclama o peitoral, e é um
+            de estimação, nutrido a lavagens de cozinha e rapadura, o qual não pára um instante a
+            cabeça, porque é o mais bonito de todos, com direito de ser serrador, e está sôfrego por
+            correr; — Benevides, baiano importante, que tem os dentes limados em ponta, e é o único a
+            usar roupa de couro de três peças, além do chapelão, que todos têm. Mas Sinoca,
+            novamente, se assentando meio de-banda, por deboche de si mesmo, em cima do AmorPerfeito, palafrém tordilho de Dona Maricota, que estranha o serigote, de tanto afeito ao
+            silhão: —“Cavalo manso de moça só se encosta em tamborete...” —“Ô, gente, ô gente!”
+            “Desassa a tua mandioca!” E Juca Bananeira, que dá uma palmada na anca do Belmonte —
+            cavalo do menino da casa, desbocado, viciado e inventador de modas —e sobe, com
+            excelência, perguntando:
+            — Eh, e o Badú? Qu’é do Badú?!
+            — Francolim, Francolim! chama o Major Saulo, caminhando sul-norte e norte-sul, na
+            varanda, conversando com a cachorrinha.
+            — Não está aqui, não, seu Major... anuncia de lá Benevides, que, com simples pressão de
+            pernas nas abas da sela papuda, faz o corcel preto revirar nos cambitos; e logo ajuda a
+            chamar:
+            — Ooó, Francolim!
+            As vacas fogem para os fundos do eirado, com os bezerrinhos aos pinotes. Caracoleiam os
+            cavalos, com os cavaleiros, em giros de picadeiro. E Sua-Cara correu para latir, brava, no
+            topo da escada.
+            — Badú, ó Badú!
+            — Já vem ele ali, Juca, foi se despedir da namorada...
+            Enfim surge Francolim, vindo da varanda do lado, mastigando qualquer coisa.
+            — Fui ver se tudo vai ficar em ordem, lá por dentro, seu Major.
+             — Olha para mim, Francolim: “joá com flor formosa não garante terra boa!”... Arrancha
+            aqui, perto das minhas vistas.
+            E o Major Saulo aponta com a taca, na direção dos currais cheios:
+            — Boiada e tanto! Nem bem dois meses no meloso, vinte dias no jaraguá, e está aí esta
+            primeira leva, berrando bomba de graúda. Nunca vi uma cabeceira-do-gado tão escolhida
+            assim.
+            — Isto, seu Major. E só gordura honesta de bois. A gente aqui não faz roubo.
+            — E que que eu tenho com os santos-óleos?
+            — Sim senhor, seu Major... Estou dizendo que não vantagem, no seu Ernesto, eles terem
+            embarcado a cabeceira antes de nós, na outra semana, porque eu agora estou sabendo que
+            eles lá são mestres de dar sal com enxofre ao gado, para engordar depressa, gordura de
+            mentira, de inchação!
+            — Cala a boca, Francolim. Estão todos assanhados, não cabendo no curral...
+            Quatrocentas e muitas reses, lotação de dois trens-de-bois. Na véspera, o Major Saulo saíra
+            pela invernada, com os campeiros, ele escolhendo, eles apartando. O peso era calculado a
+            olho. O preço fora discutido e combinado, em telegramas. E já chegara o aviso do agente:
+            os especiais estavam esperando, na estação do arraial.
+            —Vá lavar sua cara, Francolim.
+            — Lavar cachorro a esta hora, seu Major?
+            — Não. Lavar sua cara mesma, de você. Há-há... Tempo de trabalho entrou, Sebastião...
+            Sebastião subira a escada e se chegara. Com polainas amarelas e pés descalços. Concordou.
+            Ia dizer qualquer coisa, mas fechou a boca a tempo, porque o Major Saulo continuava
+            olhando para a aglomeração de bois.
+            Nos pastos de engorda, ainda havia milhares deles, e até junho duraria o êxodo dos
+            rebanhos de corte. E, como acontecia o mesmo em todas as fazendas de ali próximo, e, com
+            ligeiras variantes, nas muitas outras constelações de fazendas, escantilhadas em torno das
+            estaçõezinhas daquele trecho, era a mobilização anual da fauna mugidora e guampuda, com
+            trens e mais trens correndo, vagões repletos, atochados, consignados a Sítio e Santa Cruz.
+            De pois, nos meados da seca, os pastos se esvaziavam, e os boiadeiros tinham de espalharse em direção aos longínquos centros de cria, para comprar e arrebanhar gado magro. Pelas
+            queimadas, já estariam de volta. Repouso. Primeiro sal. Primeiro pasto. Ração de sal todos
+            os meses, na lua nova. E, pronto, recomeçar.
+            —Vai cair chuvinha fina, mas as enchentes ainda vão ser bravas. Este ano acaba em seis!...
+            Pode ajuntar o povo, Sebastião.
+            — Chama Zé Grande. Mas, que é aquilo, Francolim?
+            Quando Badú chegou, com muito atraso, das montadas só restava o poldro pampa. Já
+            arreado, livre das tamancas nos ra milhos, mantém-se quieto, a grosso ver, mas lançando de
+            si es tremeções e sobressaltos, como um grande corpo elétrico.
+            —Há-há...
+            — Silvino está com ódio do Badú...
+            E Badú está acabando de saber que tem de montar o poldro. Não reclama. Fica ressabiado,
+            observando.
+            — ...por causa que Silvino também gosta da moça, mas a moça não gostou dele mais...
+            — Esquece os casos Francolim!. . .Ver se o Badú entende de doma: lá vai montar...
+            Badú vem ao animal. Verifica se a cilha está bem apertada. Ajeita, por um são caminho de
+            idéias, o seu próprio correão da cintura. Pula de-escancha no arreio, e o poldro — hop’plá!
+            — esconde o rabo e funga e desanda, num estardalhaço de peixe fera pego no anzol. Se
+            empinou, dá um de-ancas, se empina; saiu de lado, ajuntando as munhecas, sopra e bufa, se
+            abre e fecha, bate crina, parece que vai disparar.
+            O Major Saulo assiste, impassível. Só no verde dos seus olhos é que pula o menino do riso.
+            Mas Francolim não se contém:
+            — Silvino assoviou no ouvido do bicho... Eu reparei, seu Major! Se o senhor mandar, eu
+            vou lá, pôr autoridade nessa gente...
+            — Caiu, que eu vi!
+            Era um super-salto magistral, com todas as patas no ar e a cabeça se encostando na cauda,
+            por debaixo cio resto. Mas Badú não caiu: perdendo os estribos, aperta os joelhos na cabeça
+            da jereba, iça o poldro nas rédeas e acalcanha nele as rosetas, gritando: — Desce a serra,
+            pedidor!
+            — Há-há... Grudou as pernas no santantônio, firme! Está aí, Francolim, você ainda acredita
+            no que vê?
+            — Sim senhor, seu Major... Sou prevenido. Mas, tem outra coisa que eu careço de dar
+            parte ao senhor... Faz um passo para lá, Zé Grande, que eu preciso de um particular urgente
+            aqui com o patrão.
+            — Que é que é, Francolim Fonseca?
+            — Francolim Ferreira, seu Major... O que é, é que eu sei, no certo, mas mesmo no certo,
+            que Silvino vai matar o Badú, hoje.
+            — Na minha Fazenda ninguém mata outro. Dá risada, Francolim!
+            — Sim senhor, mas o caso não é de brinquedo, seu Major... Silvino quer beber o sangue do
+            Badú... Se o senhor fornece ordem, eu dou logo voz de prisão no Silvino, no arraial, depois
+            do embarque...
+            — Escuta, Francolim: “não é nas pintas da vaca que se mede o leite e a espuma”!... Vamos
+            embora, de uma vez.
+            E o Major Saulo desce a escada da varanda, com a corte de Francolim e Zé Grande, e vem
+            devagar, a passos pesados, para o esteio das argolas.
+            — Puxa o cardão, Francolim. Ó João Manico, Manicão meu compadre, que é que você está
+            esperando, para enjambar essa outra azêmola! e o Major sobe no cardão, que, mesmo tão
+            grande, quase se abate e encosta a barriga no chão.
+            Já encabrestado, Sete-de-Ouros não está disposto a entregar-se: “Vai, mas custa”!, quando
+            outros o irritam, é a divisa de um burricoque ancião. Com rapidez, suas orelhas passam à
+            postura vertical, enquanto acompanha o homem, com um olho de esguelha, a fito de não
+            errar o coice.
+            João Manico anda-lhe à roda, aos resmungos. Põe-lhe o baixeiro. Depois, peio certo, antes
+            de arrear, bate na cabeça do burrinho, como Deus manda. Sete-de-Ouros se esquiva à
+            clássica: estira o queixo e se acaçapa, derreando o traseiro e fazendo o arreio cair no chão.
+            Então o vaqueiro se convence de que precisa de mostrar melhores modos:
+            — Eh, burrinho, acerta comigo, meu negro.
+            Assim, Sete-de-Ouros concorda. João Manico passa-lhe a mão espalmada no pescoço, e ele
+            gosta e recebe bem a manta de pita. Já não reage, conformado. Dá apenas o repuxão
+            habitual cia barriga, contraindo bruscamente a pele, do cilhadouro às ilhargas e das ilhargas
+            ao cilhadouro. Encrespa e desencrespa também o couro do pescoço. E acelera as pancadas
+            da cauda, no vai-e-vem bulhento de um espanador. Ao aceitar o freio, arreganha demais os
+            beiços num tremendo sorriso de dentes amarelos. Mas logo regressa ao eterno cochilo, até
+            que João Manico tenta montar.
+            —Ara viva! Está na hora, João Manico meu compadre. Você e o burrinho vão bem porque
+            são os dois mais velhos e mais valentes daqui... Convém mais você ir indo atrás, à toa.
+            Deixa para ajudar na hora do embarque... E o Sete-de-Ouros é velho, mas é um burro bom,
+            de gênio. . . Você não sabe que um burro vale mais do que um cavalo, Manico?...
+            — Compadre seô Major, para se viajar o dia inteiro, em marcha de estrada, estou mesmo
+            com o senhor. Mas, para tocar boiada, eh, Deus me livre que eu quero um burrinho assim!...
+            — Mais coragem, Manico, sem gemer... “Suspiro de vaca não arranca estaca!”... Mas, que
+            é que você está olhando tanto, Francolim?
+            É, acolá, no outro extremo do eirado, Juca Bananeira, que brinca de mexer tranças na
+            crineira de Belmonte, e conversa com Badú. — “Você faz mal, de andar assim desarmado
+            de arma! Silvino é onça-tigre. Todo-o-mundo sabe que ele está esperando hora.. .“ Aí Badú,
+            atravessando na frente do arreio a longa vara de ferrão, e mostrando o poldro, agora
+            quietado, exausto de pular, só diz: —“Comigo não tem quem tem! Eu também, quando vejo
+            aquele, fico logo amigo da minha faca. Mas Silvino é medroso, mole, está sempre em
+            véspera de coisa nenhuma!” —“Aí fiando! Quem tem inimigo não dorme!.. .“ E Juca
+            Bananeira vai para a eloqüência, porque confia tanto na moleza de Silvino quanto um temfarinha-aí acredita na imobilidade de uma cobra-cipó, ou uma cobra-cipó crê na lonjura alta
+            de uma acauã.
+            Mas Badú guina o poldro, vindo cá para perto do canto onde João Manico conversa ainda
+            com o Major.
+            Sete-de-Ouros espetou as orelhas para a frente. É calmo e comodista, mas de maneira
+            alguma honesto. Quando João Manico monta, ele não pula, por preguiça. Mas tem o
+            requinte de escoucear o estribo direito, primeiro com a pata de diante, de- pois com a de
+            trás, cruzando fogos.
+            — Não falei, compadre seô Major?!... Bicho medonho! Burro não amansa nunca de-todo,
+            só se acostuma!...
+            Mas o Major Saulo largava, sem responder, rindo já longe, rumo aos vaqueiros: lá junto à
+            cerca, com os cavalos formados em fileira, como um esquadrão de lanceiros.
+            — “Olha só, vai trovejar...” E Leofredo mostrava o gado: todos inquietos, olhos ansiosos,
+            orelhas erectas, batendo os parênteses das galhas altas. — “Não é trovoada não. São eles
+            que estão adivinhando que a gente está na horinha de sair...” Mas, nem bem Sinoca
+            terminava, e já, morro abaixo, chão a dentro, trambulhavam, emendados, três trons de
+            trovões. Aí, a multidão se revolveu, instantânea, e uma onda de corpos cresceu, pesada,
+            quebrou-se num dos lados do curral e refluiu para a banda oposta. Em pânico, procuravam
+            a saída.
+            — Vi-i! Vão dar o que fazer! Vigia ali: tem muito crioulo caraço, caçando gente para
+            arremeter... Ei, Zé Grande?...
+            Zé Grande passa a correia do berrante a tiracolo, e continua ca lado, observando. Para a
+            sabença do gado, ele é o melhor vaqueiro da Tampa, homem ledor de todos os sestros e
+            nequícias do bicho boi. Só pelo assim do marruás bulir ou estacionar, mede ele o seu grau
+            de má fúria, calcula a potência de arremesso, e adivinha para que lado será o mais dos
+            ataques, e qual a pata de apoio, o giro dos grampos, e o tempo de volta para a segunda
+            ofensiva.
+            — Ixe, ixe! Muito boi pesado. São os de Fortaleza. Só curraleiro alevantado, nação de boi
+            arisco...
+            — Olha aquela aratanha araçá, que às há-de-as! Está empurrando os outros, para poder ficar
+            no largo sozinha; não deixa nenhum se encostar. É para curro, vaca roda-saia...
+            — Parece com a que pegou você mais o Josias, Tote?
+            — Mas eu já disse... Já jurei que não foi culpa minha, e não foi mesmo, A vaca fumaça
+            estava com a cria no meio do curral, fungando forte e investindo at no vento... Josias falou
+            comigo: “Vamos dar uma topada, para ver se ela tem mesmo coragem conversada.” Eu
+            disse: “Vamos, mas com sossego.” Só ai que aconteceu que nós esquecemos de combinar,
+            em antes, quem era que esperava e quem era que tirava... Ficamos: eu da banda de cá, ele
+            ali. A’ pois, primeiro que a gente pulasse a cerca para dentro, já a diaba da vaquinha estava
+            de lá, herege, tomando conta do que a gente queria querer fazer!...
+            — Não era hora de facilitar...
+            — Mas foi. Mal a gente tinha botado os p no chão, e ela riscou de ar, sem negaça, frechada,
+            desmanchando o poder da gente espiar... Nós todos dois entesamos de lado, para tirar, e
+            ninguém não escorou. Foi a conta. Ela deu o tapa, não achou firmeza, e remou as varas
+            para fora... Escolheu quem, e guampou o Josias na barriga... Mas virou logo para a minha
+            banda, e veio me visitar, me catando com os chifres e me jogando baba na cara. Eu corri.
+            Não tinha mesmo de correr?!...
+            — Com vara boa, de pau-d’arco, na mão de bom vaqueiro?
+            — Mas, minha vara, ela tinha mandado longe. Não falei?... Josias foi o mais desfeliz,
+            porque foi jogado para tudo quanto era lado, com a monstra sapateando em cima dele e
+            chifrando... Mas ela só não me pegou também, porque, com o fezuê, até o bezerrinho levou
+            susto e atravessou na frente, entre nós dois, espinoteando, com a caudinha na cacunda.
+            Quando eu ia pular a cerca, ela ainda me alcançou, na sola dum pé: juntou com a força do
+            pulo que eu ia dando, e eu caí, por riba do monte de achas de aroeira que estava lá... Culpa
+            eu tive?... Má sorte do companheiro. Era o dia dele, o meu não era!...
+            — Ei, vamos mudar de contar coisas tristes, que seu Major não gosta...
+            Major Saulo cavalga para cá, acabando de fazer a volta completa dos currais, com Zé
+            Grande e Sebastião dos lados, e Francolim.
+            — Agora, que é que há e que é que não há, Zé Grande?
+            — Eu acho que a boiada vai bem, se Major. Não vão dar muito trabalho, porque estão bem
+            gordos, e com preguiça de fazer desordem. Boi bravo, tem muitos, mas isso o senhor pode
+            deixar por conta da gente... Pé-duro, tem poucos... Agora, eu acho que tem alguns que a
+            gente devia de apartar. Olha, seô Major: aquele laranjo agarrotado está só procurando beira
+            de cerca. E o marruás crioulo, esse ali cor de canela, do pêlo arrepiado, que assusta até com
+            o batido de rabo dos outros... Pois eles dois hão de querer escapulir, e é um perigo os outros
+            estourarem atrás. Aquele camurça, de focinho preto até por dentro das ventas, está cego de
+            um olho...
+            — Estará mesmo?
+            — Agaranto. Olha agora: todos estão gostando de bater nele, da banda cega. Não chega no
+            arraial sem estar muito machucado... E, se a gente descuidar, ele, à toinha, à toinha, pega a
+            querer pinchar para fora da estrada, do lado do olho são... Aquela vaca moura, também... E
+            maligna, está judiando com os outros, à traição. O resto está em ordem.
+            — Caso com tua fala, Zé Grande. Sinoca, mais Tote: vão se parar aqueles quatro, e trazer
+            outros, do curral pequeno, para repor no lugar. Mas, Virgem! Não viram aquela prenda? E
+            ia como boi de corte? Vigia se é capão ou não...
+            E o Major Saulo indicava, mesmo na beira do estacado, um boi esguio, preto-azulado,
+            azulego; não: azul asa-de-gralha, água longe, lagoa funda, céu destapado — uma tinta
+            compacta, despejada do chanfro às sobre-unhas e escorrendo, de volta, dos garrões ao
+            topete — concolor, azulíssimo.
+            — É inteiro... Não, é roncolho. Mas bonito como um bicho de Deus!...
+            — É só de longe, seu Major. De perto, ele é de cor mais trivial...
+            — E que me importa? Não quero esse boi para ser Franco um, que não sai de perto de
+            mim... Há-há... Aparta, já, também. E vamos, vamos com Deus, minha gente. Dá a saída,
+            Bastião. Ver com isso, compadre Manico!
+            Pobre burrico Sete-de-Ouros, que não tem culpa de ser duro de boca, nem de ter o centrode-gravidade avançado para o trem anterior do corpo...
+            — Toca, gente! Ligeiro! Faz parede!
+            Sebastião entrou no curral. Zé Grande, o guieiro, sopra no berrante. Os outros se põem em
+            duas alas divergentes —fazem paredes, formando a xiringa. Sinoca escancara a porteira,
+            que fica segurando. Leofredo, o contador, reclama:
+            —Apertem mais, p’ra o gado sair fino, gente! Ajusta, Juca, tu não sabe fazer o gado? Ei,
+            um!...
+            É o primeiro jacto de uma represa. Saltou uma vaca china, estabanada, olhando para os
+            lados ainda indecisa. — Dois! — Pula um pé-duro mofino, como veado perseguido.
+            Passam todos. Três, quatro, cinco. Dez. Quinze. Vinte. Trinta.
+            — Hê boi! Hê boi! Hê boi-hê boi-hê boi!...
+            — Cinqüenta! Sessenta!
+            — Rebate esse bicho bezerro. P’ra um lado! Não presta, não pesa nada.
+            — Oitenta! Cem!
+            Cerca o mestiço da Uberaba. Topa, Tote!... Eh bicho bronco... Chifre torto, orelhudo,
+            desinquieto e de tundá! —exclamam os vaqueiros, aplaudindo um auroque de anatomia e
+            macicez esplêndidas, que avançou querendo agredir.
+            — Estampa de boi brioso. Quando corre, bate caixa, quando anda, amassa o chão!
+            Agora é o jorro, unido, de bois enlameados, com as ancas emplastadas de sujeira verde,
+            comprimidos, empinados, propelindo-se, levando-se de cambulhada, num atropelo
+            estrugente. Os flanqueadores recuam, alargando o beco.
+            — Eh, boi!... Eh, boi!...
+            — Quatrocentos e cinqüenta.., e sessenta. Pronto, seu Major.
+            Corta de lado o Major Saulo, envolto na capa larga, comandando:
+            — Dianta, Leofredo! Da banda de lá, Badú!
+            Vão, à frente, Zé Grande, tocando o berrante, e Sebastião, que solta a toda a garganta o
+            primeiro aboio, como um bárbaro refrão:
+            — Eêêê, bô-ôi!...
+            Escalonados, do flanco direito, Leofredo,Tote, Sinoca e Benevides. Da banda esquerda,
+            Badú, Juca Bananeira, Silvino e Raymundão.
+            — Boiada boa!.., proclama o Major, zarpando.
+            — Burrico miserável!... — desabafa João Manico, cravando as esporas nos vazios de
+            Sete-de-Ouros, que abana a cabeça, amolece as orelhas, e arranca, nada macio, no seu
+            viageiro assendeirado, de ângulo escasso, pouca bulha e queda pronta.
+            Caniço de magro, com um boné de jóquei no crânio, lá vai Francolim, logo atrás do Major.
+            —Eh,boi!... Eh,boi...
+            E, ao trompear intercadente do berrante, já ecoam as canções:
+            “O Curvelo vale um conto,
+            Cordisburgo um conto e cem.
+             Mas as Lages não tem preço,
+             Porque lá mora o meu bem...”
+            Nenhum perigo, por ora, com os dois lados da estrada tapados pelas cercas. Mas o gado
+            gordo, na marcha contraída, se desordena em turbulências. Ainda não abaixaram as
+            cabeças, e o trote é duro, sob vez de aguilhoadas e gritos.
+            — Mais depressa, é para esmoer?! — ralha o Major. — Boiada boa!
+            Galhudos, gaiolos, estrelos, espácios, combucos, cubetos, lobunos, lompardos, caldeiros,
+            cambraias, chamurros, churriados, corombos, cornetos, bocalvos, borralhos, chumbados,
+            chitados, vareiros, silveiros... E os tocos da testa do mocho macheado, e as armas antigas
+            do boi cornalão...
+            — P’ra trás, boi-vaca!
+            — Repele Juca. . . Viu a brabeza dos olhos? Vai com sangue no cangote...
+            — Só ruindade e mais ruindade, de em-desde o redemunho da testa até na volta da pá! Este
+            eu não vou perder de olho, que ele é boi espirrador...
+            Apuram o passo, por entre campinas ricas, onde pastam ou ruminam outros mil e mais bois.
+            Mas os vaqueiros não esmorecem nos eias e cantigas, porque a boiada ainda tem passagens
+            inquietantes: alarga-se e recomprime-se, sem motivo, e mesmo dentro da multidão
+            movediça há giros estranhos, que não os deslocamentos normais do gado em marcha —
+            quando sempre alguns disputam a colocação na vanguarda, outros procuram o centro, e
+            muitos se deixam levar, empurrados, sobrenadando quase, com os mais fracos rolando para
+            os lados e os mais pesa dos tardando para trás, no coice da procissão.
+            — Eh, boi lá!... Eh-é-é-eh, boi!... Tou! Tou! Tou...
+            As ancas balançam, e as vagas de dorsos, das vacas e touros, batendo com as caudas,
+            mugindo no meio, na massa embolada, com atritos de couros, estralos de guampas,
+            estrondos e baques, e o berro queixoso do gado junqueira, de chifres imensos, com muita
+            tristeza, saudade dos campos, querência dos pastos de lá do sertão...
+            “Um boi preto, um boi pintado,
+            cada um tem sua cor.
+            Cada coração um jeito
+            de mostrar o seu amor.”
+            Boi bem bravo, bate baixo, bota baba, boi berrando... Dança doido, dá de duro, dá de
+            dentro, dá direito... Vai, vem, volta, vem na vara, vai não volta, vai varando...
+            “Todo passarinh’ do mato
+            tem seu pio diferente.
+            Cantiga de amor doído
+            não carece ter rompante...”
+            Pouco a pouco, porém, os rostos se desempanam e os homens tomam gesto de repouso nas
+            selas, satisfeitos. Que de trinta, trezentos ou três mil, só está quase pronta a boiada quando
+            as alimárias se aglutinam em bicho inteiro —centopéia — mesmo prestes assim para
+            surpresas más.
+            — Tchou!.. . Tchou!... Eh, booôi!...
+            E, agora, pronta de todo está ela ficando, cá que cada vaqueiro pega o balanço de busto,
+            sem-querer e imitativo, e que os ca valos gingam bovinamente. Devagar, mal percebido,
+            vão sugados todos pelo rebanho trovejante — pata a pata, casco a casco, soca soca, fasta
+            vento, rola e trota, cabisbaixos, mexe lama, pela estrada chifres no ar...
+            A boiada vai, como um navio.
+            — Põe p’ra lá, marroeiro!
+            — Investiu?
+            — Quase...
+            — Coisa que ele é acabanado e de cupim, que nem zebu...
+            — Fosse meu, não ia para o corte. Bonito mesmo, desempenado. Até me lembro do
+            Calundú...
+            — Qual esse, Raymundão?
+            — O Calundú? Pois era um zebu daquela idade. O maior que eu já vi.
+            — Guzerá?
+            — Ach’que.
+            — Baio, como o Paulatão?
+            — Cor de céu que vem chuva. Berrava rouco, de fazer respeito...
+            — Todo zebu se impõe.
+            — Aquele mais. Que marruás!
+            — Por quê?
+            — Parecia manso e custava para se enchouriçar. Mas, um dia, brigou com o reprodutor dos
+            Oliveiras, zebu também, dos pintados. Ferraram luta sem parar, por bem duas horas, e o
+            Calundú derrubou o outro, quase morto, no desbarrancado.
+            — E para se lidar?
+            — Não era qualquer vaqueiro chegado de fora, não. Tinha mania: não batia em gente a-pé,
+            mas gostava de correr atrás de cavaleiro. De longe, ele já sabia que vinha algum, porque
+            encostava um ouvido no chão, para escutar. Olha, que vamos entrar no cerradão. Tento aí,
+            p’ra eles não se espalharem para os lados!
+            — Abre a guia! Afrouxa o coice! — grita Juca Bananeira, transmitindo o comando de
+            Sebastião.
+            Os costaneiros se afastam, e aboiam prolongado:
+            — E-ê-ê-ê-ê, boi...
+            Enquanto os da frente incitam o marche-marche dos quadrúpedes:
+            — Eh, boi-vaca! Tchou! Tchou! Tchou!... Ei! Ei!...
+            E o rebanho se estira e alonga, reduzindo as fileiras, como sol dados a passarem, em
+            movimento, de uma formação de grande fundo para coluna de pelotão.
+            — Mundo velho, ventania! — brada Juca Bananeira, sustando o cavalo para apreciar a
+            desfilada dos bois taroleiros, correndo de aspas altas: o débito fluido das patas, o turbilhão
+            de ângulos, o balouço dos perfis em quina, e o jogo veloz das omoplatas oblíquas.
+            — Arreda, bruto, mamolengo!
+            Um veio de lá, jogado de empuxe, e baqueou meio ajoelha do, justo-justo esbarrando no
+            cavalo de Raymundão.
+            Tropeiam, agora, socornando e arfando, mas os alcantis encapelados, eriçados de pontas,
+            guardam uma fidelidade de ritmos, escorrendo estrada avante. E o chapadão atroa, à
+            percussão debulhada dos mil oitocentos e quarenta cascos de unha dupla.
+            Sopra sempre o guia no seu corno, porém, e os outros insistem no canto arrastado, tão
+            plangente, que os bois vão cadenciando por ele o tropel.
+            — A chuva está aí está caindo, Raymundão. Mas, vigia aquele garrotão preto, que vai ali,
+            babando em cima da casa dos outros, O Calundú era importante assim?
+            —Vou contar. Espera, vamos fazer uma mamparra: vamos encostar os cavalos, e trancar o
+            gado, para ele só dar trabalho da banda do povo de lá e a gente poder conversar com
+            sossego... Assim. Oh, diabo, você mestre, e eu querendo ensinar você a fazer trecho..,
+            — Que historia foi? O Calundú matou alguém?
+            — Depois. O que eu vou contar foi no Retiro... Eu tinha ido lá, buscar uma vaca fronteira,
+            da filha de seu Major. A vaquinha tinha parido na beirada da lagoa, e jacaré comeu a cria.
+            Por isso ela estava emperreada, tinha virado bicho-do-mato, correndo atrás de qualquer
+            barulhinho, arremetendo à toa. Me deu tanto trabalho, que eu tive de dormir lá, no rancho
+            de perto dos co queiros... De noite, saiu uma lua rodoleira, que alumiava até passeio de
+            pulga no chão. Minha cachorra paqueira, que não gostava de parar sem o que fazer, ficou
+            vagabundeando por si, e pegou a acuar. Algum tatu rabo-mole, por aí... — eu pensei. Fui
+            ver... Oi, segura, siô!
+            Um boizão fumaça bufou na orelha do poldro de Badú, que refugou — arranco para trás,
+            para a esquerda e para baixo, entortando o pescoço, rapidíssimo. Badú balanceou, bateu
+            mão na giba da jereba, e esteve pendente meio segundo, fazendo força para não ir sela
+            abaixo, sob os cascos em disparada dos bois. Mas foi ao outro lado, em pulo seguro, e
+            voltou ao assento, volteando com a ligeireza de um atamã do Ural.
+            — Foi nada. Conta a história, Raymundão.
+            — Pois então, quando fui espiar o que a minha cachorra Zeferina estava estranhando...
+            — Oh guês! Isso é nome de cachorro?
+            — Foi por vingança que eu pus, quando minha mulher Zeferina me largou... Mas, a’ pois,
+            não imagina o que eu vi! Dei mesmo numa baixada de pasto, e afundei quase no meio das
+            vacas. Já disse que estava lindeza de claridade de noite... E de repente eu vi que o gado
+            estava cheio de idéia, começando um manejo esquisito. Mandei a cachorrinha calar a boca,
+            e então pude apreciar direito: as vacas, desinquietas, estavam se ajuntando, se amontoando
+            num bolo, empurrando os bezerros para o meio, apertando, todas encalcando, de modo que
+            aquilo tudo, espremido, parecia uma rodeira grande, rodando e ficando cada vez mais
+            pequena, sem parar de rodar...
+            — E daí?
+            — Espera, olha a chuva descendo o morro. Eh, água do céu para cheirar gostoso, cheiro de
+            novidade!... É da fina... Mas, então, o Calundú, que era o garrote delas, ainda parecia ser
+            mais graúdo do que era mesmo, rodeando as vacas, meio dando as costas para a manada,
+            assim de cabeça em pé! E aí eu ouvi um miado longe, e me alembrei daquela onça preta
+            que estava salteando estrago no gado de seu Quilitano, nas Lages, e no Saco-da-Grota.
+            Onção de todo o tamanho...
+            — Ei, gente, olha o pé-d’água!
+            Chegava a chuva, branquejante, farfalhando rumorosa, vinda de trás e não de cima, de
+            carreira. Alcançou a boiada, enrolando-a toda em bruma e continuando corrida além. Os
+            vultos dos bois pareciam crescer no nevoeiro, virando sombras esguias, de reptis
+            desdebuxados, informes, com o esguicho das bátegas espirrando dos costados. O pisoteio
+            teve um tom mole, de corrida no bagaço. E houve mugidos. Mas, roufenho, o berrante
+            trombeteou de novo, mais forte, na frente.
+            — Canta, gente!
+            E, aí, soltaram a chuva de verdade: chuva pesada, despejada, um vasto vapor opaco. Era
+            como se a gente passasse por debaixo de cachoeira. E desenxergaram-se, de todo, os bois.
+            Mas os vaqueiros cantavam juntos:
+            “Chove, chuva, choverá,
+            Santa Clara a clarear
+            Santa Justa há de justar
+            Santo Antônio manda o sol
+            P’ra enxugar o meu lençol...”
+            — Oh, diabo, custou que melhorou. A gente nem estava podendo tomar fôlego, embaixo
+            desse dilúvio...
+            — Mas, e depois, a onça, Raymundão?
+            — A onça, o povo dizia que ela tinha vindo de longe. Onça tigre macha, das do matogrosso... Onça bicho doido para caminhar, e que anda só de noite, campeando o que
+            sangrar... Pois, naquela ocasião, eu estava crente que ela estava a muitas léguas de lá onde
+            que eu estava... Pensei que andasse pelo Maquiné
+            — Mas, e o zebu?
+            — Bom, quando eu ouvi o miado, fui para perto de um angico novo, por causa que eu
+            estava sem arma de fogo, e onça não trepa em pau fino — se diz — que ela não tem poder
+            de abarcar com as munhecas... Aquilo, eu pedia a Deus para mandar ela não vir do meu
+            lado... Fiquei alegre, quando escutei melhor o miado da bicha-fera, lá por trás do tabocal...
+            E o Calundú cavacava o chão e bufava, com uma raiva tão medonha, que ai fiquei mais
+            animado, por ele estar me protegendo, e at tive pena da pobre da oncinha!
+            — E depois? A tigre chegou no marruás?
+            — Perde essa moda. Zebu zebu mesmo, e marruás garrote, dos outros... Mas, ai, eu vi a
+            canguçu, vi o vulto dela, por que era lua cheia, noite clara, já falei.
+            — Urrando, assanhada, Raymundão? Eu já vi uma suçuarana rompente, uma vez...
+            — Não é capaz. Onde foi que já se viu onça tocaiar criação desse jeito? Aquilo ela vem
+            feito gato quando quer pegar passarinho: deitada, escorregando devagarinho, com a barriga
+            no chão, numa maciota, só com o rabo bulindo... Os olhos que alumiam verde, que nem
+            vagalume bagudo...
+            — Mas, pulou no cangote do zebu?
+            — Que óte! Que ú!... Você acredita que ela não teve coragem?! Naquela hora, nem o
+            capeta não era gente de chegar no guzerá velho-de-guerra. Nem toureiro afamado, nem
+            vaqueiro bom, Mulatinho Campista, Viriato mais Salathiel, coisa nenhuma... E, quem
+            chegasse, era só mesmo por ter vontade de morrer suicidado sem querer...
+            — Ixe!
+            — Mas o Calundú cada vez ia ficando mais enjerizado e mais maludo, ensaiando para ficar
+            doido, chamando a onça para o largo e xingando todo nome feio que tem. Aquilo, eu fui
+            bobeando de espiar tanto para ele, como que nunca eu não tinha visto o zebu tão grandalhão
+            assim! A corcunda ia até lá embaixo, no lombo, e, na volta, passava do lugar seu dela e
+            vinha p chapéu na testa do bichão. Cruz! E até a lua começou a alumiar o Calundú mais do
+            que as outras coisas, por respeito...
+            — Eu estou quase não acreditando mais, Raymundão...
+            — Bom, pode ter sido também uma visão minha, não duvido nada... Mas, então foi que eu
+            fiquei sabendo que tem também anjo-da-guarda de onça!... Você sabe que, quando a tigre
+            arma o bote, é porque ela já olhou tudo o que tinha de olhar, e já pensou tudo o que tinha de
+            pensar, e aí nunca que ela deixa de dar o pulo, não é? Pois, nesse dia, a canguçu de certo
+            que imaginou mais um tiquinho, porque ela desmanchou o dela, andando de rastro para trás
+            um pedaço bom. Depois, correu para longe, sem um miado, e foi-s’embora. Onça esperta!...
+            — Oi, que é?
+            — Estamos chegando no córrego. Vamos lá...
+            — Vigia só como a cheia está alta. A água quando dando na metade do ingazeiro! ... Qu’ é
+            do barranco? Sumiu, está vendo?
+            — Virgem! E agaranto que em até de noite ainda sobe mais... A lua não é boa... Ano
+            acabando em seis...
+            — A enchente está vindo de desde as cabeceiras: senão não descia tanta folha de buriti...
+            — Pois diz-se que tem quatro dias que lá nas nascentes não pára de chover.
+            Chega Francolim, de galope, com um recado do Major para Sebastião: — É para esperar
+            um pouco, e não apertarem o gado na travessia...
+            —Está feio. Mas isto aqui não se compara com a passagem das boiadas no Jequitinhonha...
+            — Conheço. Atravessei aquele, com seiscentas cabeças de gado da Bahia... O mais difícil
+            não é pela largura, mas porque é rio bravo, de correnteza... A gente tinha de tocar adiante
+            um lote de bois mansos, mais acostumados, que não tivessem medo. Alguns até alugavam
+            uns, ensinados, de um sitiante da beira do rio... E a gente cruzava no batelão, vigiando a
+            boiada nadar...
+            Chega o Major, chamando por Sebastião...
+            — Estou vendo que o vau agora está pior do que o resto. Melhor era destorcer mais para
+            baixo, onde deve de estar dando mais pé...
+            — Pé já não dá mesmo, em lugar nenhum, sêo Major. E está desbarrancado, lá na outra
+            beirada, e não tem saidor... Melhor por aqui mesmo, patrão.
+            — Bem, mas vamos com paciência! Aqui já tem morrido muita gente...
+            Estacionados na rampa, esperavam que o gado tomasse coragem. A chuvinha agora era um
+            chuvisco rarefeito; mas três regos de enxurrada desciam também, borbotando e roncando,
+            com brutalidades fluviais. E a enchente crescia, O caudal, barrento, oscilava aos golpes,
+            como uma coisa viva, parecendo às vezes que baixava, para subir mais. Um pau do mato —
+            ramada, tronco e raízes — derivava tal e qual uma piroga embandeirada em amarelo;
+            esbarrou na copa do tingui, que se submergia fixa e hemisférica; depois, virou de bordo,
+            retomou rumo, e foi águas abaixo.
+            Tremendo, este córrego da Fome! Em tempo de paz, não passa de um chuí chocho um fio.
+            Mas, dezembro vindo, com o dar das longas chuvas, torna-se mais perigoso que um rio
+            grande, que sempre guarda seus remansos, praias rasas e segmentos de retardada
+            correnteza.
+            Entupindo o declive do morro, a boiada permanecia parada. Muitos mugiam.
+            — Cou! Cou!Tou!Tou!...
+            Os primeiros se chegam para a beirada. Zé Grande entra n’água, no Cata-Brasa, que pega a
+            nadar. E, já no meio da torrente, o guieiro ainda se volta, tocando o berrante. Um junqueira
+            longicórnio estica o pescoço fino, arrebita o focinho, e pula, de rabo desfraldado. Então, há
+            que os cocorutos estremecem, para a frente e de pois para trás. Despencou-se mais um
+            cacho de reses. Chapinham com estrupido, os mocotós golpeando como puxavantes.
+            Perderam pb: os corpos desaparecem, ficam de fora somente as beiçamas, as ventas
+            polposas, palpando ar, e os pares de chifres, como tentáculos de caramujos aquáticos. E ai
+            toda a manada se precipita, com muita pressa, transpondo a enchente brava do riacho da
+            Fome.
+            O Major Saulo, que foi o derradeiro — depois de Sete-de Ouros com João Manico, e
+            mesmo atrás de Francolim — logo os alcança, contudo, pouco para lá da passagem.
+            — Viva, meu povo, não se perdeu nenhum Francolim, vai dizer a Sebastião que toquem
+            pelo caminho de baixo, no fim da vargem... E você, compadre Manico, que tal com o meu
+            burrinho sem velhice? Escuta, Manico, nesse passo, nesta marcha, escrevo que ele agüenta
+            viagem de mais de um dia.
+            — É mesmo, seô Major meu compadre. Esperto ele é, pois faz que agüenta, só para poder
+            contrariar a gente. </p>
+    </section>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+.wrapper{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0; /* 0 pixel de margin para cima*/
+    left: 0; /* 0 pixel de distância da margem esquerda*/
+    background-color: #ece8e8;
+}
+
+.div-1{
+    width: 100%;
+    height: 15%;
+    background-color: #856eaa;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.div-2{
+    width: 15%;
+    height: 85%;
+    background-color: #5db970;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.div-3{
+    width:100%;
+    height: 15%;
+    background-color: #faddad;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.div-4{
+    width: 85%;
+    height: 70%;
+    position: absolute;
+    background-color: #8d0404;
+    top: 15%;
+    left: 15%
+}
+
+.dl{
+    margin: 0%;
+}
+.logo{
+    left: 1%;
+    top: 15%;
+    position: relative;
+    height: 60%;
+    width: 10%;
+}
+.titulo-title{
+    position: relative;
+    color: #dadddd;
+    left: 20%;
+    bottom: 30%;
+}
+.titulo-rodape{
+    left: 50%;
+    position: relative;
+}
+.conteudo-rodape{
+    left: 50%;
+    position: relative;
+    text-align:justify;
+}
+
+
+
+
+/*
+Position, posição da div na tela.
+Absolute: Qualquer atributo é relativa à tela.
+Relative: Relativo ao que está dentro.
+*/

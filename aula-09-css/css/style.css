@@ -1,0 +1,28 @@
+body{
+    margin-top: 0;
+    margin-left: 0;
+    background-image: linear-gradient(to right,  #dbbb7e, #f0bf65)
+}
+.wrapper{
+    column-count: 2;
+    column-gap: 40px;
+    column-rule-width: 5px;
+    column-rule-style: dotted;
+    column-rule-color: #2d78e7;
+    color:#a75260;
+    font-family: Montserrat;
+    text-indent: 50px;
+}
+.titulo{
+    text-align: center;
+    text-shadow:0px 0px 3px #e9b4bb, 2px 2px 3px #888888;
+}
+.content-1 h1{
+    text-shadow: 0px 0px 3px #e7b9c1, 2px 3px 4px #bda6a6;
+}
+.imagem{
+    position: relative;
+    padding-left: 42%;
+    opacity: 0.8;
+    filter:brightness(0.9);
+}
